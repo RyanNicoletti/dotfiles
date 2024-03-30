@@ -1,0 +1,14 @@
+[user]
+	email = r.nicoletti1@gmail.com
+	name = Ryan Nicoletti
+[gui]
+	editor = vim
+[color]
+	ui=auto
+
+[core]
+	editor = vim~
+[pull]
+	rebase = true
+[diff]
+	colorMoved = zebra
