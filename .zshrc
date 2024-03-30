@@ -6,6 +6,8 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
+# change custom directory so oh my zsh changes are tracked in git repo
+export ZSH_CUSTOM=$HOME/.dotfiles/ohmyzsh/custom
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
