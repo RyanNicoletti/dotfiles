@@ -17,6 +17,9 @@ else
   export EDITOR='vim'
 fi
 
+# track oh my zsh changes in bare git repo
+export ZSH_CUSTOM=$HOME/.dotfiles/custom
+
 # aliases
 alias dotgit='/usr/bin/git --git-dir=/Users/ryannicoletti/.cfg/ --work-tree=/Users/ryannicoletti'
 
