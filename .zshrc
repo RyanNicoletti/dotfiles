@@ -7,7 +7,6 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 # change custom directory so oh my zsh changes are tracked in git repo
-export ZSH_CUSTOM=$HOME/.dotfiles/ohmyzsh/custom
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
@@ -23,7 +22,4 @@ fi
 export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
 # aliases
-alias dotgit='/usr/bin/git --git-dir=/Users/ryannicoletti/.cfg/ --work-tree=/Users/ryannicoletti'
-
-source /Users/ryannicoletti/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-alias config='/usr/bin/git --git-dir=/Users/ryannicoletti/.dotfiles/ --work-tree=/Users/ryannicoletti'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
