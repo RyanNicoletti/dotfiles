@@ -2,10 +2,19 @@ filetype off
 
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'haishanh/night-owl.vim'
 call plug#end()
 
-syntax on
+""""" enable 24bit true color
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+colorscheme night-owl
+
+" if pop up menu is visible, tab to complete, else normal tab
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
 
 filetype plugin indent on
 
