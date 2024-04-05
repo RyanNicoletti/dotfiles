@@ -23,7 +23,15 @@ export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
 # aliases
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-
+alias qatgo='ssh 192.168.103.200'
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# golang
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+
+# nvim
+export PATH=~/neovim/bin:$PATH
