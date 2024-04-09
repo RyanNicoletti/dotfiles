@@ -17,6 +17,7 @@ vim.opt.smartcase = true
 vim.opt.mouse = "a" --enable mouse
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.ruler = false
 
 vim.opt.signcolumn = "yes"
