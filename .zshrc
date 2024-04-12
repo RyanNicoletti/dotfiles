@@ -22,7 +22,7 @@ fi
 export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
 # aliases
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias qatgo='ssh 192.168.103.200'
 # nvm
 export NVM_DIR="$HOME/.nvm"
