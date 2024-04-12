@@ -1,11 +1,9 @@
 return {
     -- plugin installer
     {
-        "williamboman/mason.nvim",
-        build = ":MasonUpdate",
-        cmd = { "Mason", "MasonInstall" },
-        config = function()
-          require("mason").setup()
-        end,
-      }
+      "williamboman/mason.nvim",
+      opts = function(_, opts)
+        table.insert(opts.ensure_installed, "prettier")
+      end,
+    }
 }

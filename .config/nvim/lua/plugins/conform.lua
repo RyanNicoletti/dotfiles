@@ -4,20 +4,34 @@ return {
     cmd = { "ConformInfo" },
     keys = {
       {
-        -- format with leader f
-        "<leader>f",
+        "<leader>cf",
         function()
-          require("conform").format({ async = true, lsp_fallback = true })
+          require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 })
         end,
-        mode = "",
-        desc = "Format buffer",
+        mode = { "n", "v" },
+        desc = "Format Injected Langs",
       },
     },
     -- Everything in opts will be passed to setup()
     opts = {
       -- Define your formatters
       formatters_by_ft = {
-        javascript = { "prettier" },
+        ["javascript"] = { "prettier" },
+        ["javascriptreact"] = { "prettier" },
+        ["typescript"] = { "prettier" },
+        ["typescriptreact"] = { "prettier" },
+        ["vue"] = { "prettier" },
+        ["css"] = { "prettier" },
+        ["scss"] = { "prettier" },
+        ["less"] = { "prettier" },
+        ["html"] = { "prettier" },
+        ["json"] = { "prettier" },
+        ["jsonc"] = { "prettier" },
+        ["yaml"] = { "prettier" },
+        ["markdown"] = { "prettier" },
+        ["markdown.mdx"] = { "prettier" },
+        ["graphql"] = { "prettier" },
+        ["handlebars"] = { "prettier" },
       },
       -- Set up format-on-save
       format_on_save = { timeout_ms = 500, lsp_fallback = true },
