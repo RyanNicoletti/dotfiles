@@ -35,6 +35,7 @@ export PATH=$PATH:$GOROOT/bin
 
 # nvim
 export PATH=~/neovim/bin:$PATH
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
