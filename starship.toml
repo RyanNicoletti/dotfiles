@@ -1,0 +1,30 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = '''
+$os$directory$git_branch$git_status$git_state$all
+$character'''
+
+[character]
+format= '$symbol'
+success_symbol = '[\$](bold green)'
+error_symbol = '[\$](bold red)'
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+home_symbol = 'home'
+style = '#bf5700'
+
+[git_branch]
+always_show_remote = true
+symbol = '🌱 '
+remote_name = 'origin'
+
+[git_status]
+style = 'bold green'
+
+[os]
+disabled = false
+
